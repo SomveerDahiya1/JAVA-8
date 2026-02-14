@@ -2,10 +2,18 @@ package LambdaExpression;
 
 public class Main {
     public static void main(java.lang.String[] args) {
-        Runnable runnable = () -> {
-            System.out.println("Running");
+        Runnable thread = () -> {
+            for(int i=1 ; i<=10 ;i++){
+                System.out.println(i);
+                try{
+                    Thread.sleep(1000);
+                }
+                catch (Exception e){
+                    e.getMessage();
+                }
+            }
         };
-        runnable.run();
+
 
         Calc calc = (a,b)->a+b ;
         System.out.println(calc.add(5,10));
