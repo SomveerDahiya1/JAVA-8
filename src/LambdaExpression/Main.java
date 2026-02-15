@@ -14,6 +14,9 @@ public class Main {
             }
         };
 
+        Thread thread1 = new Thread(thread);
+        thread1.setName("Work");
+        thread1.start();
 
         Calc calc = (a,b)->a+b ;
         System.out.println(calc.add(5,10));
