@@ -26,5 +26,10 @@ public class Main {
             return false ;
         } ;
         System.out.println(s.checkLength("Hey"));
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+
+        list.forEach(n -> System.out.println(n));
+    }
     }
 }
+
