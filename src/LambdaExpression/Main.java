@@ -1,5 +1,5 @@
 package LambdaExpression;
-
+import java.util.*;
 public class Main {
     public static void main(java.lang.String[] args) {
         Runnable thread = () -> {
@@ -25,11 +25,17 @@ public class Main {
             if(string.length()<=5) return true ;
             return false ;
         } ;
+
         System.out.println(s.checkLength("Hey"));
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
 
-        list.forEach(n -> System.out.println(n));
+        list.forEach(n -> System.out.println(n)); //For-Each loop using Lambda Expressions
+
+        PrintEven e = new PrintEven();
+        Even even = ()->e.printEven(10); //Passing or Implementing logic through function
+        even.printEven();
     }
+
     }
-}
+
 
