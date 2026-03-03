@@ -1,6 +1,6 @@
 package LambdaExpression;
 import java.util.*;
-public class Main {
+public class Test {
     public static void main(java.lang.String[] args) {
         Runnable thread = () -> {
             for(int i=1 ; i<=10 ;i++){

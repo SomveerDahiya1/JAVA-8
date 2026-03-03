@@ -20,8 +20,11 @@ public class TestingFilter {
         contactNumbers.stream()
                 .forEach(contactNumber-> System.out.println(contactNumber)); //Lambda Expression: implementing Accept method of Consumer functional interface
 
-
-
+        //Filtering
+        System.out.println("Filtering Data");
+        contactNumbers.stream()
+                .filter(contactNumber->contactNumber.startsWith("+91")) //Implement String method
+                .forEach(contactNumber-> System.out.println(contactNumber));
 
     }
 }
